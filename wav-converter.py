@@ -38,7 +38,7 @@ if __name__ == "__main__":
         exit()
 
     print("\nFiles to convert:")
-    for file in files:
+    for file in to_convert:
         print(f"  {file}")
 
     if input(f"\nConvert {len(to_convert)} files? (y/n): ") != "y":
@@ -64,4 +64,4 @@ if __name__ == "__main__":
         for file in failed:
             print(f"\033[91m  {file}")
 
-    print("\033[0m\nDone! Exiting...\n")
+    print("\033[0;32m\nDone! Exiting...\n")
