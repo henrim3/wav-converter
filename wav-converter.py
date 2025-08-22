@@ -34,7 +34,7 @@ if __name__ == "__main__":
                      not in wav_files_no_ext, files))
 
     if len(to_convert) == 0:
-        print("\033[91m\nNo files to convert, exiting...\n")
+        print("\033[91m\nNo files to convert, exiting...\n\033[0m")
         exit()
 
     print("\nFiles to convert:")
@@ -42,7 +42,7 @@ if __name__ == "__main__":
         print(f"  {file}")
 
     if input(f"\nConvert {len(to_convert)} files? (y/n): ") != "y":
-        print("\nExiting...\n")
+        print("\nExiting...\n\033[0m")
         exit()
 
     print()
@@ -64,4 +64,4 @@ if __name__ == "__main__":
         for file in failed:
             print(f"\033[91m  {file}")
 
-    print("\033[0;32m\nDone! Exiting...\n")
+    print("\033[0;32m\nDone! Exiting...\n\033[0m")
