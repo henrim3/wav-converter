@@ -2,7 +2,7 @@ import os
 from pydub import AudioSegment
 from pydub.exceptions import PydubException
 
-EXTENSIONS = ["mp3", "m4a"]
+EXTENSIONS = ["mp3", "m4a", "mp4"]
 
 
 def get_ext(file: str) -> str:
